@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Articles</h1>
+          <ul class= "list group"></ul>
+        {% for article in articles %}
+        <li class= "list-group-item"><a href="articles/{{articles.id}}">{{article.title}}</a></li>
+          <p>Here are interesting articles covering various topics within the field of neuroscience updated each week.</p>
+          
+        </div>
+      </div>
+{% endblock %}
+{% endblock %}
